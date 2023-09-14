@@ -12,3 +12,30 @@
     width: 75%;
     height: auto;
 }
+
+#duck-button {
+    margin-top: 10px;
+    font-family: 'Titillium Web', 'Verdana', sans-serif;
+    color: rgb(181, 213, 240);
+}
+
+#both-button {
+    margin-top: 10px;
+    font-family: 'Titillium Web', 'Verdana', sans-serif;
+    color: rgb(181, 213, 240);
+}
+
+#fact-button {
+    margin-top: 10px;
+    font-family: 'Titillium Web', 'Verdana', sans-serif;
+    color: rgb(181, 213, 240);
+}
+
+body {
+    font-family: 'Titillium Web', 'Verdana', sans-serif;
+    color: rgb(166, 191, 213);
+}
+
+#name-duck {
+    padding-top: 10px;
+}
