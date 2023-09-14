@@ -14,6 +14,7 @@ function load_daily() {
         dataType: "json",
         success: function(resp) {
             $("#image-duck").attr("src", resp.message);
+            $("#name-duck").text(get_random_name());
             return false;
         }
     });
@@ -38,9 +39,20 @@ function load_random_dog() {
         dataType: "json",
         success: function(resp) {
             $("#image-duck-random").attr("src", resp.message);
+            $("#name-duck-random").text(get_random_name());
             return false;
         }
     });
+}
+
+function get_random_name() {
+    const names = [
+        "g",
+        "h",
+        "j"
+    ];
+
+    return names[Math.floor(Math.random() * names.length)];
 }
 
 function load_random() {
@@ -51,4 +63,8 @@ function load_random() {
 $(function() {
     load_daily();
     load_random();
+
+    $("#duck-button").bind("click", load_random_dog);
+    $("#both-button").bind("click", load_random);
+    $("#fact-button").bind("click", load_random_fact);
 });
