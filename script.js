@@ -47,9 +47,37 @@ function load_random_dog() {
 
 function get_random_name() {
     const names = [
-        "g",
-        "h",
-        "j"
+        "Emperor Dog",
+        "Empress Dog",
+        "Tsar Dog",
+        "Tsarina Dog",
+        "King Dog",
+        "King Consort Dog",
+        "Queen Dog",
+        "Marquess Dog",
+        "Marchioness Dog",
+        "Count Dog",
+        "Countess Dog",
+        "Earl Dog",
+        "Viscount Dog",
+        "Vicountess Dog",
+        "Baron Dog",
+        "Baroness Dog",
+        "Baronet Dog",
+        "Baronetess Dog",
+        "Esquire Dog",
+        "Sir Dog",
+        "Sire Dog",
+        "Mistress Dog",
+        "Madam Dog",
+        "Ma'am Dog",
+        "Dame Dog",
+        "Lord Dog",
+        "Lady Dog",
+        "Doctor Dog",
+        "Professor Dog",
+        "Chancellor Dog",
+        "Vice-Chancellor Dog"
     ];
 
     return names[Math.floor(Math.random() * names.length)];
